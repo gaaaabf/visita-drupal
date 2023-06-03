@@ -17,6 +17,7 @@
 # that core/assets/vendor and any other vendor directories within contrib or
 # custom module, theme, etc., are not ignored unless you purposely do so.
 /vendor/
+/web/themes/custom/visita_ubec_theme/node_modules
 
 # Ignore other scaffold files
 #

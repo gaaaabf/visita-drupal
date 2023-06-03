@@ -2,3 +2,19 @@ name: vista-ubec
 recipe: drupal10
 config:
   webroot: web/
+
+services:
+  appserver:
+    build_as_root:
+      - apt update
+      - curl -sL https://deb.nodesource.com/setup_16.x | bash -
+      - apt install nodejs
+    run:
+      - cd $LANDO_MOUNT && composer install
+      - cd $LANDO_MOUNT/web/themes/custom/visita_ubec_theme && npm install
+
+tooling:
+  node:
+    service: appserver
+  npm:
+    service: appserver
