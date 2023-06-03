@@ -44,7 +44,7 @@ if (!empty($_ENV['PANTHEON_ENVIRONMENT'])) {
     default:
       $config['config_split.config_split.dev_config']['status'] = TRUE;
       $config['config_split.config_split.stg_config']['status'] = FALSE;
-      $config['config_split.config_split.prd_config']['status'] = FALSE; 
+      $config['config_split.config_split.prd_config']['status'] = FALSE;
       // Key for dev and multidev envs.
       break;
   }
