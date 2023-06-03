@@ -1,0 +1,15 @@
+uuid: 8b41e1b3-ab66-49d3-8c76-bc116a7d5eb9
+langcode: en
+status: true
+dependencies: {  }
+id: stg_config
+label: 'Stg Config'
+description: ''
+weight: 0
+folder: sites/default/config/stg_config
+module: {  }
+theme: {  }
+blacklist: {  }
+graylist: {  }
+graylist_dependents: true
+graylist_skip_equal: false

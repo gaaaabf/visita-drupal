@@ -25,8 +25,26 @@ include __DIR__ . "/settings.pantheon.php";
  */
 // $settings['skip_permissions_hardening'] = TRUE;
 
+if (!empty($_ENV['PANTHEON_ENVIRONMENT'])) {
+  switch ($_ENV['PANTHEON_ENVIRONMENT']) {
+    case 'live':
+      // Keys for production env.
+      break;
+
+    case 'test':
+      // Keys for staging env.
+      break;
+
+    default:
+      // Key for dev and multidev envs.
+      break;
+  }
+}
+
+$settings['config_sync_directory'] = 'sites/default/config/main_config';
+
 /**
- * If there is a local settings file, then include it
+ * If there is a local settings file, then include it.
  */
 $local_settings = __DIR__ . "/settings.local.php";
 if (file_exists($local_settings)) {

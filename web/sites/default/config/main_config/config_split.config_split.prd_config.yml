@@ -1,0 +1,15 @@
+uuid: b15962e8-0f74-4649-bbf8-90612a681ab3
+langcode: en
+status: true
+dependencies: {  }
+id: prd_config
+label: 'Prd Config'
+description: ''
+weight: 0
+folder: sites/default/config/prd_config
+module: {  }
+theme: {  }
+blacklist: {  }
+graylist: {  }
+graylist_dependents: true
+graylist_skip_equal: false

@@ -1,0 +1,15 @@
+uuid: c0db74d0-9733-4b7d-a449-3031b808fd10
+langcode: en
+status: true
+dependencies: {  }
+id: dev_config
+label: 'Dev Config'
+description: ''
+weight: 0
+folder: sites/default/config/dev_config
+module: {  }
+theme: {  }
+blacklist: {  }
+graylist: {  }
+graylist_dependents: true
+graylist_skip_equal: false
