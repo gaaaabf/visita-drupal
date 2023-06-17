@@ -12,6 +12,7 @@ services:
     run:
       - cd $LANDO_MOUNT && composer install
       - cd $LANDO_MOUNT/web/themes/custom/visita_ubec_theme && npm install
+      - cd $LANDO_MOUNT/web/themes/custom/visita_ubec_theme && npm run scss
 
 tooling:
   node:

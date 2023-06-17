@@ -6,15 +6,22 @@ var concat = require('gulp-concat');
 sass.compiler = require('node-sass');
 
 var config = {
-  sassPath: './resources/sass',
-  bowerDir: './bower_components',
   nodeModules: './node_modules'
 }
 
-gulp.task('sass', function () {
-   return gulp.src('./scss/**/*.scss')
-   .pipe(sass({
-      outputStyle: 'compressed',
-    }).on("error", notify.onError(function (error) { return "Error: " + error.message; })))
-   .pipe(gulp.dest('./css/'));
-});
+function css() {
+  return gulp.src('./scss/**/*.scss')
+  .pipe(sass({
+     outputStyle: 'compressed',
+   }).on("error", notify.onError(function (error) { return "Error: " + error.message; })))
+  .pipe(gulp.dest('./css/'));
+};
+
+// function copy_js() {
+//   return gulp.src([
+//     // config.nodeModules + '/flickity/dist/flickity.pkgd.min.js',
+//   ])
+//   .pipe(gulp.dest('./js'));
+// }
+
+gulp.task('sass', gulp.series(css));
