@@ -17,11 +17,4 @@ function css() {
   .pipe(gulp.dest('./css/'));
 };
 
-// function copy_js() {
-//   return gulp.src([
-//     // config.nodeModules + '/flickity/dist/flickity.pkgd.min.js',
-//   ])
-//   .pipe(gulp.dest('./js'));
-// }
-
 gulp.task('sass', gulp.series(css));

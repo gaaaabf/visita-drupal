@@ -1,0 +1,22 @@
+uuid: 4842ba46-fec9-4d83-9064-2b4c474549e0
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - visita_ubec_theme
+_core:
+  default_config_hash: erQSEZF2XUjNmgTl0uNRBzmg18ZGXwUcw2FhApoeuHk
+id: visita_ubec_theme_content
+theme: visita_ubec_theme
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  label_display: '0'
+  provider: system
+visibility: {  }

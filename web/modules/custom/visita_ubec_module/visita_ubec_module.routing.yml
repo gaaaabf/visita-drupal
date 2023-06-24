@@ -1,0 +1,7 @@
+visita_ubec_module.top_page:
+  path: '/top'
+  defaults:
+    _title: 'Top Page'
+    _controller: '\Drupal\visita_ubec_module\Controller\PageController::build'
+  requirements:
+    _permission: 'access content'

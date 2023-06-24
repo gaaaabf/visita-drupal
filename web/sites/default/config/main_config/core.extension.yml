@@ -43,9 +43,11 @@ module:
   tour: 0
   user: 0
   views_ui: 0
+  visita_ubec_module: 0
   views: 10
   standard: 1000
 theme:
   olivero: 0
   claro: 0
+  visita_ubec_theme: 0
 profile: standard
